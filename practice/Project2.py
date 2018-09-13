@@ -7,11 +7,15 @@ windowTitle = "Project 2"
 cube = turtle.Turtle()
 tetra = turtle.Turtle()
 octa = turtle.Turtle()
+dode = turtle.Turtle()
+icos = turtle.Turtle()
 
 def drawSpeed():
     cube.speed(10)
     tetra.speed(10)
     octa.speed(10)
+    dode.speed(10)
+    icos.speed(10)
 drawSpeed()
 
 #Start position X = 0
@@ -79,5 +83,21 @@ def drawOcta(octa):
         octa.fd(87)
         octa.left(120)
 drawOcta(octa)
+
+#Start position X = -300
+def drawDode(dode):
+
+    dode.penup()
+    dode.setpos(-300, 0)
+    dode.pendown()
+drawDode(dode)
+
+#Start position X = 300
+def drawIcos(icos):
+
+    icos.penup()
+    icos.setpos(300, 0)
+    icos.pendown()
+drawIcos(icos)
 
 window.exitonclick()
