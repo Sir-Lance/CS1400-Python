@@ -84,19 +84,61 @@ def drawOcta(octa):
         octa.left(120)
 drawOcta(octa)
 
-#Start position X = -300
+#Start position X = -250
 def drawDode(dode):
 
     dode.penup()
-    dode.setpos(-300, 0)
+    dode.setpos(-250, 0)
     dode.pendown()
+    for i in range(5):
+        dode.fd(70)
+        dode.left(72)
+
+    dode.penup()
+    dode.setpos(-233, 25)
+    dode.pendown()
+    for i in range(5):
+        dode.fd(35)
+        dode.left(72)
+
+    dode.penup()
+    dode.setpos(-250, 0)
+    dode.pendown()
+#line to center
+    dode.left(55)
+    dode.fd(30)
+#follow edge
+    dode.left(55)
+    dode.fd(35)
+#center to edge
+    dode.left(52)
+    dode.fd(29)
+#edge to center and follow the center
+    dode.back(30)
+    dode.right(125)
+    dode.fd(37)
+#center to edge
+    dode.left(52)
+    dode.fd(29)
+    dode.back(29)
+    dode.right(126)
+    dode.fd(36)
+    dode.left(55)
+    dode.fd(30)
+    dode.back(30)
+    dode.right(128)
+    dode.fd(36)
+    dode.left(55)
+    dode.fd(30)
+
+
 drawDode(dode)
 
-#Start position X = 300
+#Start position X = 250
 def drawIcos(icos):
 
     icos.penup()
-    icos.setpos(300, 0)
+    icos.setpos(250, 0)
     icos.pendown()
 drawIcos(icos)
 
