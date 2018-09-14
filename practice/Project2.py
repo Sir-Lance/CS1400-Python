@@ -93,31 +93,29 @@ def drawDode(dode):
     for i in range(5):
         dode.fd(70)
         dode.left(72)
-
     dode.penup()
     dode.setpos(-233, 25)
     dode.pendown()
     for i in range(5):
         dode.fd(35)
         dode.left(72)
-
     dode.penup()
     dode.setpos(-250, 0)
     dode.pendown()
-#line to center
+    #line to center
     dode.left(55)
     dode.fd(30)
-#follow edge
+    #follow edge
     dode.left(55)
     dode.fd(35)
-#center to edge
+    #center to edge
     dode.left(52)
     dode.fd(29)
-#edge to center and follow the center
+    #edge to center and follow the center
     dode.back(30)
     dode.right(125)
     dode.fd(37)
-#center to edge
+    #center to edge
     dode.left(52)
     dode.fd(29)
     dode.back(29)
@@ -130,8 +128,6 @@ def drawDode(dode):
     dode.fd(36)
     dode.left(55)
     dode.fd(30)
-
-
 drawDode(dode)
 
 #Start position X = 250
