@@ -3,6 +3,7 @@ import math
 
 window = turtle.Screen()
 windowTitle = "Project 2"
+window.bgcolor("purple")
 
 cube = turtle.Turtle()
 tetra = turtle.Turtle()
@@ -20,7 +21,8 @@ drawSpeed()
 
 #Start position X = 0
 def drawCube(cube):
-
+    #cube.color("blue", "green")
+    #cube.begin_fill()
     for i in range(4):
         cube.fd(50)
         cube.left(90)
@@ -50,11 +52,13 @@ def drawCube(cube):
     cube.pendown()
     cube.setpos(20, 20)
     cube.penup()
+    #cube.end_fill()
 drawCube(cube)
 
 #Start position X = 100
 def drawTetra(tetra):
-
+    #tetra.color("blue", "green")
+    #tetra.begin_fill()
     tetra.penup()
     tetra.setpos(100, 0)
     tetra.pendown()
@@ -66,11 +70,13 @@ def drawTetra(tetra):
     tetra.setpos(200, 0)
     tetra.setpos(150, 25)
     tetra.setpos(150, 87.66)
+    #tetra.end_fill()
 drawTetra(tetra)
 
 #Start position X = -100
 def drawOcta(octa):
-
+    #octa.color("blue", "green")
+    #octa.begin_fill()
     octa.penup()
     octa.setpos(-100, 0)
     octa.pendown()
@@ -82,11 +88,13 @@ def drawOcta(octa):
     for i in range(3):
         octa.fd(87)
         octa.left(120)
+    #octa.end_fill()
 drawOcta(octa)
 
 #Start position X = -250
 def drawDode(dode):
-
+    #dode.color("blue", "green")
+    #dode.begin_fill()
     dode.penup()
     dode.setpos(-250, 0)
     dode.pendown()
@@ -128,6 +136,7 @@ def drawDode(dode):
     dode.fd(36)
     dode.left(55)
     dode.fd(30)
+    #dode.end_fill()
 drawDode(dode)
 
 #Start position X = 250
@@ -136,6 +145,40 @@ def drawIcos(icos):
     icos.penup()
     icos.setpos(250, 0)
     icos.pendown()
+    for _ in range(6):
+        icos.fd(50)
+        icos.left(60)
+    icos.left(30)
+    for _ in range(2):
+        #icos.left(30)
+        icos.fd(85)
+        icos.left(120)
+    icos.left(0)
+    icos.fd(85)
+    icos.left(120)
+    icos.fd(42.5)
+    icos.left(60)
+    icos.fd(42.5)
+    for _ in range(2):
+        icos.left(120)
+        icos.fd(42.5)
+    #icos.left(120)
+    #icos.fd(42.5)
+    icos.setpos(250, 0)
+    icos.left(30)
+    icos.fd(50)
+    icos.left(120)
+    icos.fd(25)
+    icos.right(30)
+    icos.fd(42.5)
+    icos.right(30)
+    icos.fd(25)
+    icos.back(25)
+    icos.left(150)
+    icos.fd(42.5)
+    icos.right(30)
+    icos.fd(25)
+
 drawIcos(icos)
 
 window.exitonclick()
