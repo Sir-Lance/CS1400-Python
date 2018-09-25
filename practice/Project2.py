@@ -180,7 +180,6 @@ def drawIcos(icos):
     icos.fd(42.5)
     icos.right(30)
     icos.fd(25)
-
 drawIcos(icos)
 
 window.exitonclick()
