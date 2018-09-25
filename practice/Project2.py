@@ -4,6 +4,8 @@ import math
 window = turtle.Screen()
 windowTitle = "Project 2"
 
+window.bgcolor("purple")
+
 cube = turtle.Turtle()
 tetra = turtle.Turtle()
 octa = turtle.Turtle()
